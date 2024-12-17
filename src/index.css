@@ -1,0 +1,341 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  /* border: 2px solid red; */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  max-width:1200px;
+  margin:auto;
+  background-color: #f8f8f8;
+}
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin:auto;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button-primary:hover {
+  background-color: #0056b3;
+}
+
+.button-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.otp-container {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.otp-box {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+}
+
+.resend-text {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.navbar {
+  position: relative; 
+  top: 0;
+  padding: 16px 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+}
+
+
+.navbar-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 2rem 1.5rem;
+  display: flex;
+  gap:10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text {
+  max-width: 70%;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:grey;
+}
+
+.header-subtitle {
+  margin: 4px 0 0;
+  font-size: 1rem;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.header-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.section {
+  margin: 3rem 1.3rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Taste Section - Horizontal Scroll */
+.card-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 16px;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.taste-card {
+  flex: 0 0 auto; 
+  width: 200px; 
+  background: white;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.taste-name{
+  text-align: left;
+  margin:4px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.taste-address{
+  text-align: left;
+  color:grey;
+  line-height: 20px;
+  margin:4px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Carousel Container */
+.carousel {
+  position: relative;
+  width: 90%;
+  margin:auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: none; 
+}
+
+
+/* Slide Container */
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+
+.carousel-item {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.carousel-caption {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.button-primary {
+  
+  background-color: #ff6d6a;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width:100%;
+  margin:auto;
+}
+
+.button-primary:hover {
+  background-color: #ff615e;
+}
+
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #007bff;
+}
+
+
+.carousel-slide::-webkit-scrollbar {
+  display: none;
+}
+
+
+.restaurant-card {
+  display: flex;
+  gap: 16px;
+  /* padding:10px; */
+  background: white;
+  border-radius: 8px;
+  padding: 8px;
+  margin:20px 14px;
+  box-shadow: 0px 2px 4px rgba(107, 105, 105, 0.1);
+}
+
+.restaurant-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+}
+
+.restaurant-details {
+  flex: 1;
+}
+
+.offers-text {
+  color: #d25336;
+  font-size: 0.875rem;
+}
+
+.rating-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.875rem;
+}
+
+.rating svg {
+  color: #ff5107;
+}
