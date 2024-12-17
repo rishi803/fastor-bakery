@@ -40,6 +40,7 @@ const OTPVerificationPage = ({ onVerify, onResend }) => {
     <div className="container center-screen">
       <div className="card">
         <h2 className="card-title">Enter Verification Code</h2>
+        <h3>Please use verification code as 123456</h3>
         <div className="otp-container">
           {otp.map((data, index) => (
             <input
